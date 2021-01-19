@@ -1,14 +1,28 @@
 .header {
- 
+    nav {
+        padding: 24px;
+    }
     &__logo{
         img {
 
         }
     }
-    &__menu{
+    &__menu{ //Mobile Menu
 
         > span {
             display: block;
+            width:26px;
+            height: 2px;
+            background-color: $darkBLue;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+    &__links {
+        a {
+            font-size: $font-sm;
         }
     }
 }
